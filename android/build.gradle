@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace "com.tryingoutsomething.soundmode.sound_mode"
+    namespace "com.tryingoutsomething.soundmode"
     defaultConfig {
         compileSdk 34
         minSdkVersion 16
