@@ -26,9 +26,11 @@ android {
     if (project.android.hasProperty('namespace')) {
         namespace "com.tryingoutsomething.soundmode.sound_mode"
     }
+    compileSdkVersion 33
+
     defaultConfig {
-        compileSdk 34
         minSdkVersion 16
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
         disable 'InvalidPackage'
