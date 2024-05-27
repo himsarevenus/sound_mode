@@ -22,7 +22,10 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace "com.tryingoutsomething.soundmode"
+    // conditional for compatibility with older gradle versions
+    if (project.android.hasProperty('namespace')) {
+        namespace "com.tryingoutsomething.soundmode.sound_mode"
+    }
     defaultConfig {
         compileSdk 34
         minSdkVersion 16
